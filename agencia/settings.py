@@ -104,7 +104,7 @@ import dj_database_url
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://neondb_owner:npg_z4QfelOvHct1@ep-damp-dew-admuqhqd-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require',
+        default='postgresql://neondb_owner:npg_z4QfelOvHct1@ep-damp-dew-admuqhqd-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require',
         conn_max_age=600
     )
 }
@@ -151,4 +151,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # o 'file' si prefieres
+
 
